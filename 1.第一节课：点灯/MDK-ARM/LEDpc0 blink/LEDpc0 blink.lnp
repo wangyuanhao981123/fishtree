@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"ledpc0 blink\startup_stm32f103xe.o"
+"ledpc0 blink\main.o"
+"ledpc0 blink\stm32f1xx_it.o"
+"ledpc0 blink\stm32f1xx_hal_msp.o"
+"ledpc0 blink\stm32f1xx_hal_gpio_ex.o"
+"ledpc0 blink\stm32f1xx_hal_tim.o"
+"ledpc0 blink\stm32f1xx_hal_tim_ex.o"
+"ledpc0 blink\stm32f1xx_hal.o"
+"ledpc0 blink\stm32f1xx_hal_rcc.o"
+"ledpc0 blink\stm32f1xx_hal_rcc_ex.o"
+"ledpc0 blink\stm32f1xx_hal_gpio.o"
+"ledpc0 blink\stm32f1xx_hal_dma.o"
+"ledpc0 blink\stm32f1xx_hal_cortex.o"
+"ledpc0 blink\stm32f1xx_hal_pwr.o"
+"ledpc0 blink\stm32f1xx_hal_flash.o"
+"ledpc0 blink\stm32f1xx_hal_flash_ex.o"
+"ledpc0 blink\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "LEDpc0 blink\LEDpc0 blink.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LEDpc0 blink.map" -o "LEDpc0 blink\LEDpc0 blink.axf"
